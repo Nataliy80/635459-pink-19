@@ -34,7 +34,8 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение "Пинк" - взгляните на жизнь иначе!</h1>
-    <img class="page-main__picture" src="https://via.placeholder.com/150*150" width="322px"  height="460px" alt="Фотография с фильтром на мобильном телефоне">
+    <img class="page-main__picture" src="https://via.placeholder.com/150*150" width="322px" height="460px" alt="Фотография с фильтром на мобильном телефоне">
+
     <section class="download">
       <a class="download__button" href="#">Скачать приложение</a>
       <ul class="logo-list download__list">
@@ -50,6 +51,7 @@
       </ul>
       <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
+
     <section class="advantages">
       <h2 class="advantages__caption">Устали от серости мегаполиса?  Нам есть, что вам  предложить!</h2>
       <ul class="advantages__list">
@@ -65,9 +67,95 @@
           <h3 class="advantages__title">Заводит нвых друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте,делитесь фотографиями с друзьями и заводите новых</p>
         </li>
-        <img  class="advantages__image" src="https://via.placeholder.com/150*150" width="153px" height="280px" alt="фотография айфона">
+        <img class="advantages__image" src="https://via.placeholder.com/150*150" width="153px" height="280px" alt="фотография айфона">
       </ul>
     </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </blockquote>
+        </div>
+        <!--
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name"></cite>
+          <p class="reviews__text"></p>
+        </blockquote>
+      </div>
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name"></cite>
+          <p class="reviews__text"></p>
+        </blockquote>
+      </div>
+      -->
+        <p class="reviews__toggles slider__toggles"></p>
+        <button class="slider__toggle--active" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="price">
+      <h2 class="price__title visually-hidden">Наши цены:</h2>
+      <div class="price__wrapper slider">
+        <table class="price__list">
+          <tr>
+            <td class="price__item"></td>
+            <td class="price__item">Стандарт<br>3.99 USD</td>
+            <td class="price__item"></td>
+          </tr>
+          <tr>
+            <td class="price__item"></td>
+            <td class="price__item">Розовый фильтр</td>
+            <td class="price__item"></td>
+          </tr>
+          <tr>
+            <td class="price__item"></td>
+            <td class="price__item">Смайлики</td>
+            <td class="price__item"></td>
+          </tr>
+          <tr>
+            <td class="price__item"></td>
+            <td class="price__item">Комментарии</td>
+            <td class="price__item"></td>
+          </tr>
+        </table>
+        <p class="price__toggles slider__toggles"></p>
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle--active" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <h2 class="page-footer__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
+          <img class="contacts__map" src="#" width="320" height="615" alt="Адрес htmlacademy на карте">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <p class="contacts__title">Звоните:</p>
+            <a href="tel: +78125556666" class="contacts__phone">Тел: +7 (812) 555-66-66</a>
+          </li>
+          <li class="page-footer__item">
+            <p class="contacts__title">Пишите:</p>
+            <a class="contacts__mail" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="page-footer__item">
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <b class="contacts__adress">ул: Большая<br>Конюшенная, 19/8</b>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
   </main>
 
 
