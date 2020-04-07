@@ -31,32 +31,129 @@
       </div>
     </nav>
   </header>
+
   <section class="form">
-    <h1 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="form__wrapper">
+      <h1 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <form class="form__block" action="index.html" method="post">
+
+        <fieldset class="form__user user">
+          <legend class="visually-hidden">ФИО</legend>
+          <ul class="user__list">
+            <li class="user__item">
+              <label for="surname">Фамилия:</label>
+              <input class="user__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
+            </li>
+            <li class="user__item">
+              <label for="name">Имя:</label>
+              <input class="user__input" type="text" name="username" id="name" required placeholder="Введите ваше имя *">
+            </li>
+            <li class="user__item">
+              <label for="patronymic">Отчество:</label>
+              <input class="user__input" type="text" name="surname" id="patronymic" required placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__progress progress">
+          <legend class="progress__text">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="progress__list">
+            <li class="progress__item">
+              <input class="progress__input" type="checkbox" name="selfie" id="1">
+              <label for="1">Сделал селфи с акулой</label>
+            </li>
+            <li class="progress_item">
+              <input class="progress__input" type="checkbox" name="sun" id="2">
+              <label for="2">Обгорел на пляже</label>
+            </li>
+            <li class="progress_item">
+              <input class="progress__input" type="checkbox" name="chuck" id="3">
+              <label for="3">Видел Чака Норриса</label>
+            </li>
+            <li class="progress_item">
+              <input class="progress__input" type="checkbox" name="souvenirs" id="4">
+              <label for="4">Накупил сувениров</label>
+            </li>
+            <li class="progress_item">
+              <input class="progress__input" type="checkbox" name="tower" id="5">
+              <label for="5">Удержал башню</label>
+            </li>
+            <li class="progress_item">
+              <input class="progress__input" type="checkbox" name="hotel" id="6">
+              <label for="6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__contacts contacts">
+          <legend class="visually-hidden">Контакты</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label for="phone-number">Номер телефона</label>
+              <input class="contacts__input" type="text" name="" id="phone-number">
+            </li>
+            <li class="contacts__item">
+              <label for="e-mail">Адрес почты</label>
+              <input class="contacts__input" type="text" name="" id="e-mail">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__upps upps">
+          <legend class="">С каким приложением путешествовали?</legend>
+          <ul class="upps__list">
+            <li class="upps__item">
+              <input class="upps__input" type="radio" name="" id="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </li>
+            <li class="upps__item">
+              <input class="upps__input" type="radio" name="" id="android">
+              <label for="android">Pink для Android</label>
+            </li>
+            <li class="upps__item">
+              <input class="upps__input" type="radio" name="" id="Windows">
+              <label for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__emotions emotions">
+          <legend>Опишите свои эмоции</legend>
+            <label for="text"></label>
+            <textarea class="emotions__textarea" name="" rows="8" cols="80" id="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+
+       <div class="form__submit submit">
+        <button class="submit" type="submit" name="button">Отправить форму</button>
+        <p class="form-submit__text">Обязательные поля</p>
+      </div>
+      </form>
+    </div>
   </section>
 
   <footer class="footer-form">
     <div class="footer-form__wrapper">
-    <a class="footer-form__logo">
+      <a class="footer-form__logo">
         <img class="footer-form__logo-image" src="https://via.placeholder.com/150*150" width="146px"  height="40px" alt="Логотип: Пинк">
       </a>
-    <div class="footer-form__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">YouTube</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-form__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
+      <div class="footer-form__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-form__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 
