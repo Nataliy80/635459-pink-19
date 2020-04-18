@@ -35,8 +35,8 @@
 
   <main class="page-main">
     <div class="page-main__title page-title">
-    <h1 class="visually-hidden">Мобильное приложение "Пинк" - взгляните на жизнь иначе!</h1>
-    <img class="page-main__picture" src="https://via.placeholder.com/150*150" width="320px" height="460px" alt="Фотография с фильтром на мобильном телефоне">
+      <h1 class="visually-hidden">Мобильное приложение "Пинк" - взгляните на жизнь иначе!</h1>
+      <img class="page-main__picture" src="https://via.placeholder.com/150*150" width="320px" height="460px" alt="Фотография с фильтром на мобильном телефоне">
     </div>
     <section class="download">
       <a class="download__button" href="#">Скачать приложение</a>
@@ -70,7 +70,7 @@
           <p class="advantages__description">Ставьте лайки, комментируйте,делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-        <img class="advantages__image" src="https://via.placeholder.com/150*150" width="153px" height="280px" alt="фотография айфона">
+      <img class="advantages__image" src="https://via.placeholder.com/150*150" width="153px" height="280px" alt="фотография айфона">
     </section>
 
     <section class="reviews">
@@ -96,21 +96,22 @@
         </blockquote>
       </div>
       -->
-        <p class="reviews__toggles slider__toggles"></p>
-        <button class="slider__toggle--active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle--active" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
     <section class="price">
-      <h2 class="price__title visually-hidden">Наши цены:</h2>
       <div class="price__wrapper slider">
+        <h2 class="price__title visually-hidden">Наши цены:</h2>
         <table class="price__list">
           <tr>
             <td class="price__item"></td>
-            <td class="price__item">Стандарт<br>3.99 USD</td>
+            <td class="price__item-hit">Стандарт<br>3.99 USD</td>
+            <span class="price__hit">Хит</span>
             <td class="price__item"></td>
           </tr>
           <tr>
@@ -129,18 +130,18 @@
             <td class="price__item"></td>
           </tr>
         </table>
-        <p class="price__toggles slider__toggles"></p>
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle--active" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle--active" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <h2 class="page-footer__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
-          <img class="contacts__map" src="#" width="320" height="615" alt="Адрес htmlacademy на карте">
+        <p class="page-footer__title">Остались вопросы?</p>
+        <p class="page-footer__title">Свяжитесь с нами!</p>
         <ul class="page-footer__list">
           <li class="page-footer__item">
             <p class="contacts__title">Звоните:</p>
@@ -155,6 +156,7 @@
             <b class="contacts__adress">ул: Большая<br>Конюшенная, 19/8</b>
           </li>
         </ul>
+        <img class="contacts__map" src="#" width="320" height="200" alt="Адрес htmlacademy на карте">
       </div>
     </footer>
 
