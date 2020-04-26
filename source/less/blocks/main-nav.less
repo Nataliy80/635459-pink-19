@@ -1,5 +1,23 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__wrapper {
+  width: 320px;
+  height: 325px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .main-nav a {
   display: block;
+  padding-top: 20px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -7,4 +25,28 @@
   text-transform: uppercase;
   text-decoration: none;
   line-height: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    width: 660px;
+    height: 365px;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+    height: 110px;
+    margin: 0 auto;
+  }
+
 }
