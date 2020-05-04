@@ -1,11 +1,16 @@
-.footer-form {
-  padding: 40px;
-  height: 285px;
-  border: 1px solid red;
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  outline: 1px solid green;
 }
 
+
 .form__contest {
+  max-width: 320px;
   height: 240px;
+  margin: 0 auto;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +18,7 @@
 }
 
 .form__title {
-  width: 280px;
+  max-width: 320px;
   height: 95px;
   margin: auto;
   padding-top: 100px;
@@ -24,13 +29,18 @@
   line-height:  30px;
 }
 
+.form__text {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .form__user {
   height: 390px;
   border: none;
   outline: 1px solid red;
 }
 
-.user__input,
 .contacts__input {
   width: 280px;
   height: 60px;
@@ -42,12 +52,28 @@
   outline: 1px solid red;
 }
 
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contacts__item {
+  padding-top: 30px;
+}
+
 .form__user,
 .form__contacts label,
 .progress__text,
+.upps__text,
 .form__emotions legend {
   color: #d22856;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__progress {
@@ -83,4 +109,18 @@
 
 .emotions__textarea {
   width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    max-width: 620px;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+  .form__wrapper {
+    max-width: 940px;
+  }
+
 }
