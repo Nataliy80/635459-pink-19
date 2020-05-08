@@ -1,13 +1,12 @@
-.reviews__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
-}
-
 .reviews__list {
   padding: 40px 20px 25px;
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -25,4 +24,15 @@
 
 .reviews__toggles {
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .reviews__age {
+    order: 3;
+  }
+
 }
