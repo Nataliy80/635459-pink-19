@@ -4,14 +4,12 @@
   background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: center bottom;
-  outline: 1px solid red;
 }
 
-.advantages__wrapper {
+.advantages__list {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  max-width: 320px;
+  align-items: center;
 }
 
 .advantages__caption {
@@ -35,30 +33,10 @@
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__wrapper {
+@media (min-width: @desctop-width) {
+  .advantages__list {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 660px;
-  }
-
-  .advantages {
-    background-position: left;
-  }
-
-}
-
-@media (min-width: @desctop-width) {
-  .advantages__wrapper {
-    max-width: 990px;
-    margin: 0 auto;
-  }
-
-  .advantages__list {
-    display: flex;
-    justify-content: space-between;
-    width: 790px;
-    height: 618px;
   }
 
 }

@@ -1,7 +1,7 @@
-.footer-form {
-  padding: 40px;
-  height: 285px;
-  border: 1px solid red;
+.form__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form__contest {
@@ -9,11 +9,9 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  outline: 1px solid red;
 }
 
 .form__title {
-  width: 280px;
   height: 95px;
   margin: auto;
   padding-top: 100px;
@@ -21,16 +19,20 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  line-height:  30px;
+  line-height: 30px;
+}
+
+.form__text {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .form__user {
-  height: 390px;
   border: none;
   outline: 1px solid red;
 }
 
-.user__input,
 .contacts__input {
   width: 280px;
   height: 60px;
@@ -42,27 +44,33 @@
   outline: 1px solid red;
 }
 
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contacts__item {
+  padding-top: 30px;
+}
+
 .form__user,
-.form__contacts label,
-.progress__text,
+.form__contacts legend,
+.upps__text,
 .form__emotions legend {
   color: #d22856;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.form__progress {
-  height: 605px;
-  border: none;
-  background-color: #f2f2f2;
-  outline: 1px solid red;
-}
-
-.form__progress,
 .form__upps label {
   font-size: 18px;
 }
 
-.progress__input,
 .upps__input {
   width: 38px;
   height: 38px;
@@ -75,6 +83,17 @@
   outline: 1px solid red;
 }
 
+.upps__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.upps__item {
+  padding: 15px;
+}
+
 .form__emotions {
   height: 322px;
   border:  none;
@@ -83,4 +102,81 @@
 
 .emotions__textarea {
   width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__contacts {
+    width: 620px;
+    height: 310px;
+    border: 1px solid #e5e5e5;
+    order: 3;
+  }
+
+  .form__user {
+    width: 620px;
+  }
+
+  .form__upps {
+    width: 620px;
+    height: 300px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  .form__emotions {
+    width: 620px;
+    height: 295px;
+    border: 1px solid #e5e5e5;
+    order: 5;
+    text-align: center;
+  }
+
+  .form__submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 6;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+  .form__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .form__user {
+    width: 440px;
+    height: 300px;
+  }
+
+  .form__contacts {
+    width: 940px;
+    height: 160px;
+  }
+
+  .form__upps {
+    width: 435px;
+    height: 300px;
+  }
+
+  .form__emotions  {
+    width: 940px;
+    height: 215px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .contacts__item {
+    padding: 35px;
+  }
+
 }

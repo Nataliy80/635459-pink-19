@@ -1,20 +1,20 @@
-.price {
+.price__wrapper {
   display: block;
+  margin: 0 auto;
   height: 507px;
   background-color: #f2f2f2;
-  text-align: center;
 }
 
 .price__list {
   width: 320px;
   min-height: 280px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   border-collapse: collapse;
   background-color: #ffffff;
 }
 
-.price__item-hit {
+.price__item-top {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -23,13 +23,43 @@
 }
 
 .price__item {
-  font-size: 24x;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 300;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
 }
 
+.price__item-top {
+  color: #ffffff;
+  background-color: @dark-blue;
+}
+
 .price__toggles {
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .price__list {
+    width: 620px;
+    height: 223px;
+  }
+
+  .price__item-top {
+    width: 155px;
+    height: 47px;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+  .price__list {
+    width: 945px;
+    height: 282px;
+  }
+
 }
