@@ -1,0 +1,34 @@
+.site-list {
+  min-height: 258px;
+  font-weight: bold;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.site-list a {
+  display: block;
+  padding: 24px 24px;
+  height: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+@media (min-width: @desctop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 110px;
+  }
+
+  .site-list a {
+    border: none;
+  }
+
+}
