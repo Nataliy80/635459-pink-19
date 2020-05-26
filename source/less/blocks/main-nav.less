@@ -1,13 +1,53 @@
 .main-nav__logo {
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
   text-align: left;
+  font-size: 0;
   margin-left: 20px;
   margin-top: 20px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   outline: 1px solid red;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
-.main-nav__logo img {
-  padding: 15px;
+.main-nav img {
+  width: 78px;
+  height: 25px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.main-nav--closet .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
 @media (min-width: @tablet-width) {

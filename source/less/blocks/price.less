@@ -1,8 +1,11 @@
+.price {
+  background-color: #f2f2f2;
+}
+
 .price__wrapper {
   display: block;
   margin: 0 auto;
-  height: 507px;
-  background-color: #f2f2f2;
+  min-height: 507px;
 }
 
 .price__list {
@@ -33,6 +36,10 @@
 .price__item-top {
   color: #ffffff;
   background-color: @dark-blue;
+}
+
+.price__item-top:first-child {
+  visibility: collapse;
 }
 
 .price__toggles {

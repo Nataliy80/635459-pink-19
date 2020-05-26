@@ -4,17 +4,23 @@
   align-items: center;
 }
 
+.form__wrapper {
+  height: 100%;
+}
+
 .form__contest {
-  height: 240px;
+  width: 100%;
+  height: 170px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .form__title {
+  width: 230px;
   height: 95px;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 35px;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
@@ -29,8 +35,10 @@
 }
 
 .form__user {
+  height: 380px;
   border: none;
   outline: 1px solid red;
+  order: 1;
 }
 
 .contacts__input {
@@ -41,7 +49,15 @@
 .form__contacts {
   height: 288px;
   border: none;
+  font-size: 14px;
+  color: #d22856;
+  text-transform: uppercase;
   outline: 1px solid red;
+  order: 3;
+}
+
+.form__contacts-text {
+  display: none;
 }
 
 .contacts__list {
@@ -49,17 +65,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
 .contacts__item {
+  display: flex;
+  flex-direction: column;
   padding-top: 30px;
 }
 
 .form__user,
-.form__contacts legend,
 .upps__text,
 .form__emotions legend {
   color: #d22856;
@@ -77,43 +93,101 @@
 }
 
 .form__upps {
+  width: 100%;
   height: 340px;
   border: none;
   background-color: #f2f2f2;
+  order: 4;
   outline: 1px solid red;
 }
 
 .upps__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
   margin: 0 auto;
+  padding: 0;
 }
 
 .upps__item {
+  display: flex;
+  align-items: center;
   padding: 15px;
+  padding-top: 30px;
 }
 
 .form__emotions {
   height: 322px;
   border:  none;
   outline: 1px solid red;
+  order: 5;
 }
 
 .emotions__textarea {
   width: 280px;
 }
 
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 6;
+}
+
+.submit button {
+  width: 280px;
+  height: 65px;
+  margin-top: 50px;
+  border: none;
+  background-color: #2aab6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
 @media (min-width: @tablet-width) {
+  .form__contest {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    height: 325px;
+    padding-top: 75px;
+  }
+
+  .form__title {
+    padding-top: 83px;
+    width: 470px;
+    font-weight: 500;
+  }
+
   .form__contacts {
     width: 620px;
     height: 310px;
-    border: 1px solid #e5e5e5;
+    outline: 2px solid #e5e5e5;
     order: 3;
   }
 
+  .form__contacts-text {
+    display: block;
+    text-align: center;
+  }
+
+  .contacts__list {
+    margin: 0 auto;
+  }
+
+  .contacts__input {
+    width: 500px;
+  }
+
+  .contacts__item label {
+    order: 2;
+    padding-top: 20px;
+  }
+
   .form__user {
-    width: 620px;
+    width: 625px;
+    padding: 0;
   }
 
   .form__upps {
@@ -131,11 +205,21 @@
     text-align: center;
   }
 
+  .emotions__textarea {
+    width: 500px;
+  }
+
   .form__submit {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: baseline;
+    width: 620px;
+    margin: 0;
     order: 6;
+  }
+
+  .form__submit-text {
+    margin-left: 200px;
   }
 
 }
@@ -146,6 +230,24 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  .form__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    max-height: 310px;
+  }
+
+  .form__contest {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    height: 285px;
+  }
+
+  .form__title {
+    padding-top: 75px;
+    width: 750px;
   }
 
   .form__user {
@@ -161,11 +263,16 @@
   .form__upps {
     width: 435px;
     height: 300px;
+    order: 2;
   }
 
   .form__emotions  {
     width: 940px;
     height: 215px;
+  }
+
+  .emotions__textarea {
+    width: 820px;
   }
 
   .contacts__list {
@@ -176,7 +283,19 @@
   }
 
   .contacts__item {
-    padding: 35px;
+    padding: 0;
+  }
+
+  .contacts__input {
+    width: 375px;
+  }
+
+  .form__submit {
+    width: 940px;
+  }
+
+  .form__submit-text {
+    margin-left: 500px;
   }
 
 }

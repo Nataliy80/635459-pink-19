@@ -1,14 +1,22 @@
 .photo__list {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .photo__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #f2f2f2;
   margin: 0 auto;
+}
+
+.photo__item-info {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
 }
 
 .photo__authors {
@@ -17,6 +25,15 @@
   background-color: @dark-blue;
   background-size: cover;
 }
+
+.photo__author-picture {
+  width: 100%;
+
+  & img {
+    width: 100%;
+  }
+}
+
 
 .photo__title {
   margin: auto;
@@ -43,8 +60,30 @@
 @media (min-width: @tablet-width) {
   .photo__list {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+
+  .photo__item--panorama {
+    width: 100%;
+  }
+
+  .photo__item--panorama .photo__item-info {
+    width: 640px;
+  }
+
+  .photo__item-info {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .photo__item--panorama .photo__item-info {
+    width: 940px;
   }
 
 }

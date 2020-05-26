@@ -3,9 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
   margin: 0 auto;
   padding: 0;
+}
+
+.user__item {
+  text-align: left;
+  padding-bottom: 30px;
 }
 
 .user__input {
@@ -14,6 +18,19 @@
 }
 
 @media (min-width: @tablet-width) {
+  .user__list {
+    margin: 0 auto;
+  }
+
+  .user__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .user__list label {
+    padding-right: 10px;
+  }
+
   .user__input {
     width: 525px;
   }
@@ -21,8 +38,15 @@
 }
 
 @media (min-width: @desctop-width) {
+  .user__list {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+  }
+
   .user__input {
     width: 342px;
+    padding: 0;
   }
 
 }
